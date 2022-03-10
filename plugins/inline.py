@@ -9,7 +9,6 @@ from info import MAX_RESULTS, CACHE_TIME, SHARE_BUTTON_TEXT, AUTH_USERS
 async def answer(bot, query):
     """Show search results for given inline query"""
 
-    results = []
     if '|' in query.query:
         string, file_type = query.query.split('|', maxsplit=1)
         string = string.strip()
@@ -25,16 +24,16 @@ async def answer(bot, query):
                                                   max_results=MAX_RESULTS,
                                                   offset=offset)
 
-    for file in files:
-        results.append(
-            InlineQueryResultCachedDocument(
-                title=file.file_name,
-                file_id=file.file_id,
-                caption=file.caption or "",
-                description=f'Size: {get_size(file.file_size)}\nType: {file.file_type}',
-                reply_markup=reply_markup))
-
-    if results:
+    if results := [
+        InlineQueryResultCachedDocument(
+            title=file.file_name,
+            file_id=file.file_id,
+            caption=file.caption or "",
+            description=f'Size: {get_size(file.file_size)}\nType: {file.file_type}',
+            reply_markup=reply_markup,
+        )
+        for file in files
+    ]:
         switch_pm_text = f"{emoji.FILE_FOLDER} Results"
         if string:
             switch_pm_text += f" for {string}"
@@ -45,7 +44,6 @@ async def answer(bot, query):
                            switch_pm_parameter="start",
                            next_offset=str(next_offset))
     else:
-
         switch_pm_text = f'{emoji.CROSS_MARK} No results'
         if string:
             switch_pm_text += f' for "{string}"'
