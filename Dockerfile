@@ -1,6 +1,6 @@
 #base image
 
-FROM artemisfowl004/vid-compress
+FROM Cyanidetitan/Animext_Searchbot
 
 WORKDIR /app
 
