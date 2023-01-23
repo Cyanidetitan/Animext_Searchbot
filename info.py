@@ -3,10 +3,10 @@ from os import environ
 
 # Bot information
 SESSION = 'Animxt_Encodes_bot'
-USER_SESSION = 'User_bot'
+USER_SESSION = 'BQAmv_AtfnxRFrYCx3Cw9jPiZfDUk9N7RsDlleadZOXq9kCxYZVg6reyjRXIrmABSzGRY-yeal1DdiP6bDBttupOECgoq8ALg3pLUwbGV0dxHpfVJ-eXa1Pv_sDxl7ko4STUI5T9gQbQy04iUP5cqxvslIol5-Fd8kRkU3vP338U5p8lCzcAYYe-XlvrIxlc3Rw292t_nsarmpdCVQKZKCc4HLgEuimy8VY4jdPdvIpJTpwph6s9ozP-72gJhgWjAsFIbSbTxHeAcoo0s40NHwjXjKLkwicRLn2lnEs6Yuc0uRy9TuYDPqBncx-4FhnJU5DOgmi0ouU43VqQZA76bQuuAAAAAUAx8BsA'
 API_ID = 8858279
 API_HASH = 'ef28c3f458143cbcb4271a98a2e9d596'
-BOT_TOKEN = '5725647066:AAG1yIP59oyKI1hHnYT9ncmiGxnecDxyAOY'
+BOT_TOKEN = '5862270763:AAEVMPywXQU2-MEZNPOLb1Xk1TAVibwF5u0'
 
 # Bot settings
 MAX_RESULTS = 20
