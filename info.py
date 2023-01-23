@@ -3,7 +3,7 @@ from os import environ
 
 # Bot information
 SESSION = 'Animxt_Encodes_bot'
-USER_SESSION = 'user_bot'
+USER_SESSION = 'User_bot'
 API_ID = 8858279
 API_HASH = 'ef28c3f458143cbcb4271a98a2e9d596'
 BOT_TOKEN = '5725647066:AAFgLg8cI8cTsZjyjD66sqxwNPzDLRU0GGs'
@@ -21,8 +21,8 @@ AUTH_USERS = []
 
 # MongoDB information
 DATABASE_URI = "mongodb+srv://animxt:1234@cluster0.10idlop.mongodb.net/?retryWrites=true&w=majority"
-DATABASE_NAME = 'AnimxtEncodes'
-COLLECTION_NAME = 'Animxt'
+DATABASE_NAME = 'Telegram'
+COLLECTION_NAME = 'channel_files'
 
 # Messages
 START_MSG = """
