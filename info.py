@@ -20,15 +20,21 @@ auth_users = [int(user) if re.search('^\d+$', user) else user for user in enviro
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
 # MongoDB information
-DATABASE_URI = environ['DATABASE_URI']
-DATABASE_NAME = environ['DATABASE_NAME']
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+DATABASE_URI = "mongodb+srv://animxt:1234@cluster0.10idlop.mongodb.net/?retryWrites=true&w=majority"
+DATABASE_NAME = "Animxt Encodes"
+COLLECTION_NAME = "Animxt"
 
 # Messages
 START_MSG = """
-**Hi, I'm Media Search bot**
+**Hello,
+
+Please use /search to get started.
+
+Search anime in inline mode.
+
+Note: I can only give you the files of anime that were aired in @Latest_ongoing_airing_anime **
 
 Here you can search files in inline mode. Just press following buttons and start searching.
 """
 
-SHARE_BUTTON_TEXT = 'Checkout {username} for searching files'
+SHARE_BUTTON_TEXT = 'Checkout {username} for searching best quality encodes done by @animxt'
