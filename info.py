@@ -2,22 +2,22 @@ import re
 from os import environ
 
 # Bot information
-SESSION = environ.get('SESSION', 'Media_search')
-USER_SESSION = environ.get('USER_SESSION', 'User_Bot')
-API_ID = int(environ['API_ID'])
-API_HASH = environ['API_HASH']
-BOT_TOKEN = environ['BOT_TOKEN']
+SESSION = 'Animxt_Encodes_bot'
+USER_SESSION = 'BQAmv_AtfnxRFrYCx3Cw9jPiZfDUk9N7RsDlleadZOXq9kCxYZVg6reyjRXIrmABSzGRY-yeal1DdiP6bDBttupOECgoq8ALg3pLUwbGV0dxHpfVJ-eXa1Pv_sDxl7ko4STUI5T9gQbQy04iUP5cqxvslIol5-Fd8kRkU3vP338U5p8lCzcAYYe-XlvrIxlc3Rw292t_nsarmpdCVQKZKCc4HLgEuimy8VY4jdPdvIpJTpwph6s9ozP-72gJhgWjAsFIbSbTxHeAcoo0s40NHwjXjKLkwicRLn2lnEs6Yuc0uRy9TuYDPqBncx-4FhnJU5DOgmi0ouU43VqQZA76bQuuAAAAAUAx8BsA'
+API_ID = 8858279
+API_HASH = 'ef28c3f458143cbcb4271a98a2e9d596'
+BOT_TOKEN = '5725647066:AAFgLg8cI8cTsZjyjD66sqxwNPzDLRU0GGs'
 
 # Bot settings
-MAX_RESULTS = int(environ.get('MAX_RESULTS', 10))
-CACHE_TIME = int(environ.get('CACHE_TIME', 300))
-USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
+MAX_RESULTS = 20
+CACHE_TIME = 300
+USE_CAPTION_FILTER = True
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if re.search('^\d+$', admin) else admin for admin in environ['ADMINS'].split()]
-CHANNELS = [int(ch) if re.search('^.\d+$', ch) else ch for ch in environ['CHANNELS'].split()]
-auth_users = [int(user) if re.search('^\d+$', user) else user for user in environ.get('AUTH_USERS', '').split()]
-AUTH_USERS = (auth_users + ADMINS) if auth_users else []
+ADMINS = [5371981851]
+CHANNELS = [-1001693312957]
+
+AUTH_USERS = []
 
 # MongoDB information
 DATABASE_URI = "mongodb+srv://animxt:1234@cluster0.10idlop.mongodb.net/?retryWrites=true&w=majority"
