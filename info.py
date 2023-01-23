@@ -21,7 +21,7 @@ AUTH_USERS = []
 
 # MongoDB information
 DATABASE_URI = "mongodb+srv://animxt:1234@cluster0.10idlop.mongodb.net/?retryWrites=true&w=majority"
-DATABASE_NAME = "Animxt Encodes"
+DATABASE_NAME = 'AnimxtEncodes'
 COLLECTION_NAME = 'Animxt'
 
 # Messages
